@@ -17,7 +17,7 @@
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "eslint.alwaysShowStatus": true,
   "eslint.workingDirectories": [
@@ -62,5 +62,10 @@
     { "directory": "./book/10-end/app", "changeProcessCWD": true },
     { "directory": "./book/10-end/api", "changeProcessCWD": true },
     { "directory": "./book/10-end/lambda", "changeProcessCWD": true },
-	]
+  ],
+  "cSpell.words": [
+    "Agrega",
+    "esto",
+    "Nexora"
+  ]
 }

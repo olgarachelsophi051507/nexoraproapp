@@ -1,0 +1,57 @@
+/* styles/Login.module.css */
+
+.container {
+  text-align: center;
+  margin: 50px auto;
+  padding: 40px;
+  max-width: 600px;
+  background-color: #ffffff; /* Fondo blanco */
+  color: #1a1a1a; /* Texto oscuro */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center; /* Centra los botones correctamente */
+  align-items: center;
+  gap: 15px; /* Espaciado entre botones */
+  margin-top: 20px;
+}
+
+.button {
+  padding: 12px 24px; /* Ajuste de padding */
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Efecto hover */
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.blueButton {
+  background-color: #003366; /* Azul marino */
+  color: white;
+}
+
+.redButton {
+  background-color: #d32f2f; /* Rojo */
+  color: white;
+}
+

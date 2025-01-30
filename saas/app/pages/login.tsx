@@ -4,6 +4,7 @@ import LoginButton from '../components/common/LoginButton';
 import Layout from '../components/layout';
 import withAuth from '../lib/withAuth';
 import { Store } from '../lib/store';
+import styles from '../styles/Login.module.css';
 
 type Props = {
   store: Store;
@@ -14,19 +15,26 @@ type Props = {
 function Login({ store, isMobile, firstGridItem }: Props) {
   return (
     <Layout store={store} isMobile={isMobile} firstGridItem={firstGridItem}>
-      <div style={{ textAlign: 'center', margin: '0 20px' }}>
+      <div className={styles.container}>
         <Head>
-          <title>Log in or Sign up to SaaS boilerplate</title>
+          <title>Exclusive Access for Realtors | NexoraPro</title>
           <meta
             name="description"
-            content="Login and signup page for SaaS boilerplate demo by Async"
+            content="Join NexoraPro to scale your real estate business with high-performing tools and strategies."
           />
         </Head>
-        <br />
-        <p style={{ margin: '45px auto', fontSize: '44px', fontWeight: 400 }}>Log in or Sign up</p>
-        <p>You’ll be logged in for 14 days unless you log out manually.</p>
-        <br />
-        <LoginButton />
+
+        <h1 className={styles.title}>Elevate Your Real Estate Business 🚀</h1>
+
+        <p className={styles.text}>
+          Join a community of top-performing agents and unlock exclusive tools, resources, and
+          strategies to <strong>close more deals and grow your business.</strong>
+        </p>
+
+        <div className={styles.buttonContainer}>
+          <button className={`${styles.button} ${styles.blueButton}`}>Join Now 🚀</button>
+          <LoginButton /> {/* ✅ Usando el botón de login correcto */}
+        </div>
       </div>
     </Layout>
   );
